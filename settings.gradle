@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CardlanAndroidDevice"
-include ':app'
+include ':app','cardlanlib'

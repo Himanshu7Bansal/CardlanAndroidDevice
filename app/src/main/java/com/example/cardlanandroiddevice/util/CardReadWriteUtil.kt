@@ -1,7 +1,7 @@
 package com.example.cardlanandroiddevice.util
 
-import com.example.cardlanandroiddevice.cardlanLib.twoshowinonescreen.CardLanStandardBus
-import com.example.cardlanandroiddevice.cardlanLib.utils.ByteUtil
+import com.cardlan.twoshowinonescreen.CardLanStandardBus
+import com.cardlan.utils.ByteUtil
 import com.example.cardlanandroiddevice.util.CardlanLog.debugOnConsole
 
 /**
