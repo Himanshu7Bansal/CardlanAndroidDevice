@@ -1,7 +1,7 @@
 package com.example.cardlanandroiddevice.util
 
-import com.cardlan.twoshowinonescreen.CardLanStandardBus
-import com.cardlan.utils.ByteUtil
+import com.example.cardlanandroiddevice.cardlanLib.twoshowinonescreen.CardLanStandardBus
+import com.example.cardlanandroiddevice.cardlanLib.utils.ByteUtil
 import com.example.cardlanandroiddevice.util.CardlanLog.debugOnConsole
 
 /**
@@ -9,7 +9,7 @@ import com.example.cardlanandroiddevice.util.CardlanLog.debugOnConsole
  */
 class CardReadWriteUtil {
 
-    private val mCardLanDevCtrl: CardLanStandardBus
+    private val mCardLanDevCtrl: CardLanStandardBus = CardLanStandardBus()
     private var mHasInitDev = false
     private var mHasGetResetBytes = false
     private var mInitStatus = -1
@@ -30,10 +30,6 @@ class CardReadWriteUtil {
             mHasGetResetBytes = true
             return resetByte
         }
-
-    init {
-        mCardLanDevCtrl = CardLanStandardBus()
-    }
 
     /**
      * Reads data from a sector or block
