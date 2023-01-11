@@ -17,6 +17,9 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
+        ndk {
+            abiFilters 'armeabi'
+        }
     }
 
     buildTypes {
